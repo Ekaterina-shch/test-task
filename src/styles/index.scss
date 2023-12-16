@@ -23,6 +23,8 @@ body.burger-open {
 }
 
 .button {
+  position: relative;
+  z-index: 2;
   display: block;
   width: 100%;
   max-width: 263px;
