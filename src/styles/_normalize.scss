@@ -1,0 +1,48 @@
+@import './variables';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: 0;
+}
+
+img {
+  vertical-align: top;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  font-size: 16px;
+  line-height: 130%;
+  font-weight: 400;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-family: 'Noto Sans', sans-serif;
+  color: $white;
+}
+button {
+  background-color: transparent;
+}
+a {
+  text-decoration: none;
+}
+button,
+a {
+  cursor: pointer;
+}
+
+ul li {
+  list-style: none;
+}
+
+h1,
+h2 {
+  font-family: 'Oranienbaum', serif;
+  text-transform: uppercase;
+  line-height: 130%;
+  font-weight: 400;
+}

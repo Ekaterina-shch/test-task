@@ -1,0 +1,8 @@
+@mixin d-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin line-h-130 {
+  line-height: 130%;
+}
