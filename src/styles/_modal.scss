@@ -1,0 +1,114 @@
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+
+  &.open {
+    display: flex;
+  }
+  &__wrapper {
+    border: 5px solid $dark-gray;
+    border-radius: 1rem;
+    background: linear-gradient(
+      90deg,
+      #9f734c,
+      #ba945e,
+      #d1b16e,
+      #e2c579,
+      #ecd180,
+      #f0d683,
+      #e7cc7d,
+      #d2b16e,
+      #af8757,
+      #9f734c
+    );
+    padding: 2px;
+  }
+
+  &__content {
+    background-color: $dark-gray;
+    padding: 20px;
+    max-width: 400px;
+    min-height: 454px;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    position: relative;
+  }
+
+  &__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #555;
+    transition: color 0.3s;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+    color: $golden;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  &__label {
+    font-size: 16px;
+    color: $golden;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid $golden;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #000;
+
+    &:focus {
+      border-color: #3f51b5;
+      outline: none;
+    }
+  }
+
+  &__button {
+    background-color: $golden;
+    color: #010e0f;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: darken($golden, 10%);
+    }
+  }
+  .text-success {
+    display: none;
+    text-align: center;
+    transform: translateY(300%);
+  }
+}

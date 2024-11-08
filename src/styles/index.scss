@@ -5,10 +5,7 @@
 @import './section-hero';
 @import './section-advantages';
 @import './section-tour';
-
-body.burger-open {
-  overflow: hidden;
-}
+@import './modal';
 
 .main {
   background-color: $main-bg;

@@ -1,422 +1,610 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/styles/index.scss">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Oranienbaum&display=swap"
-        rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./src/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./src/styles/index.scss" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Oranienbaum&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>РосЭкспресс</title>
-</head>
+  </head>
 
-<body class="page-body">
+  <body class="page-body">
     <header class="header">
-        <div class="container">
-            <div class="header-logo">
-                <svg xmlns="http://www.w3.org/2000/svg" width="199" height="51" viewBox="0 0 199 51" fill="none">
-                    <g clip-path="url(#clip0_1_49)">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M0.0920296 19.95H57.6109V0L0.0920296 19.95ZM101.442 27.3959V23.1419H119.443V33.7799H106.841V29.5259H115.841V27.3959H101.442ZM101.442 40.1639V29.5259H105.043V40.1639H101.442ZM81.6369 23.1479V25.2779L85.2322 29.5319L87.9257 26.3519L85.2322 23.1479H81.6369ZM81.6369 38.0399V40.1699H85.2322L91.5394 32.7179L97.8343 40.1699H99.638V35.9159L94.2328 29.5319L99.638 23.1479H94.2328L81.6308 38.0459L81.6369 38.0399ZM67.2311 33.7799H78.0294V29.5259H67.2311V33.7799ZM61.832 40.1699V23.1479H79.8331V27.4019H65.4335V35.9159H79.8331V40.1699H61.832ZM19.8049 33.8582V23.2201H32.4069V27.4741H23.4064V33.8582H19.8049ZM19.8049 40.2421V35.9881V35.9822H34.2107V23.2141H37.806V40.2421H19.8049ZM0 40.248H3.60145V29.61H0V40.248ZM18.0011 23.226V33.864V33.87H12.602L18.0011 40.254H12.602L5.39911 31.74V29.61H14.3997V27.48H0V23.226H18.0011ZM45.0089 23.2199H57.6109V27.4739H45.0089V23.2199ZM39.6037 23.2199V33.8579H54.0095V35.9879H39.6037V40.2419H57.6109V29.6039H43.2051V23.2199H39.6037ZM124.842 40.1639H121.241V29.5259H124.842V40.1639ZM139.242 33.7799V23.1419H121.241V27.3959H135.64V29.5259H126.64V31.6559L133.843 40.1699H139.242L133.843 33.7859H139.242V33.7799ZM146.451 33.7799H157.249V29.5259H146.451V33.7799ZM159.053 35.9099V40.1639V40.1699H141.052V23.1419H159.053V27.3959H144.653V35.9099H159.053ZM178.858 40.1639V29.5259H164.452V23.1419H160.857V33.7799H175.256V35.9099H160.857V40.1639H178.858ZM178.858 27.3959V23.1419H166.256V27.3959H178.858ZM198.663 29.5259V40.1639H180.661V35.9099H195.061V33.7799H180.661V23.1419H184.263V29.5259H198.663ZM198.663 23.1419V27.3959H186.061V23.1419H198.663ZM198.497 19.95H61.832V0L198.497 19.95ZM57.6109 51.0001V43.0021H0.454014L57.6109 51.0001ZM61.832 43.0021H199L61.832 51.0001V43.0021Z"
-                            fill="url(#paint0_linear_1_49)" />
-                    </g>
-                    <defs>
-                        <linearGradient id="paint0_linear_1_49" x1="0.0748683" y1="25.5" x2="199.011" y2="25.5"
-                            gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#9F734C" />
-                            <stop offset="0.13" stop-color="#BA945E" />
-                            <stop offset="0.28" stop-color="#D1B16E" />
-                            <stop offset="0.42" stop-color="#E2C579" />
-                            <stop offset="0.56" stop-color="#ECD180" />
-                            <stop offset="0.7" stop-color="#F0D683" />
-                            <stop offset="0.75" stop-color="#E7CC7D" />
-                            <stop offset="0.84" stop-color="#D2B16E" />
-                            <stop offset="0.95" stop-color="#AF8757" />
-                            <stop offset="1" stop-color="#9F734C" />
-                        </linearGradient>
-                        <clipPath id="clip0_1_49">
-                            <rect width="199" height="51" fill="white" />
-                        </clipPath>
-                    </defs>
-                </svg>
-                <span class="header-logo__text">Индивидуальные мебельные туры в Китай для частных клиентов и бизнеса
-                </span>
-            </div>
-            <div class="header-side-right">
-                <div class="header-email">
-                    <span>E-mail:</span>
-                    <a href="mailto:rosexpress-msk@yandex.ru" class="link">rosexpress-msk@yandex.ru</a>
-                </div>
-                <ul class="social-list">
-                    <li class="social-list__item">
-                        <a href="#" class="svg-socal svg-socal__youtube"></a>
-                    </li>
-                    <li class="social-list__item">
-                        <a href="#" class="svg-socal svg-socal__telergam"></a>
-                    </li>
-                    <li class="social-list__item">
-                        <a href="#" class="svg-socal svg-socal__vk"></a>
-                    </li>
-
-                </ul>
-                <div class="header-phone">
-                    <span>8 (800) 333-89-01</span>
-                    <a href="tel:+78003338901" class="link">Обратный звонок</a>
-                </div>
-            </div>
-            <button class="burger-menu" type="button">
-                <span></span>
-            </button>
+      <div class="container">
+        <div class="header-logo">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="199"
+            height="51"
+            viewBox="0 0 199 51"
+            fill="none"
+          >
+            <g clip-path="url(#clip0_1_49)">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M0.0920296 19.95H57.6109V0L0.0920296 19.95ZM101.442 27.3959V23.1419H119.443V33.7799H106.841V29.5259H115.841V27.3959H101.442ZM101.442 40.1639V29.5259H105.043V40.1639H101.442ZM81.6369 23.1479V25.2779L85.2322 29.5319L87.9257 26.3519L85.2322 23.1479H81.6369ZM81.6369 38.0399V40.1699H85.2322L91.5394 32.7179L97.8343 40.1699H99.638V35.9159L94.2328 29.5319L99.638 23.1479H94.2328L81.6308 38.0459L81.6369 38.0399ZM67.2311 33.7799H78.0294V29.5259H67.2311V33.7799ZM61.832 40.1699V23.1479H79.8331V27.4019H65.4335V35.9159H79.8331V40.1699H61.832ZM19.8049 33.8582V23.2201H32.4069V27.4741H23.4064V33.8582H19.8049ZM19.8049 40.2421V35.9881V35.9822H34.2107V23.2141H37.806V40.2421H19.8049ZM0 40.248H3.60145V29.61H0V40.248ZM18.0011 23.226V33.864V33.87H12.602L18.0011 40.254H12.602L5.39911 31.74V29.61H14.3997V27.48H0V23.226H18.0011ZM45.0089 23.2199H57.6109V27.4739H45.0089V23.2199ZM39.6037 23.2199V33.8579H54.0095V35.9879H39.6037V40.2419H57.6109V29.6039H43.2051V23.2199H39.6037ZM124.842 40.1639H121.241V29.5259H124.842V40.1639ZM139.242 33.7799V23.1419H121.241V27.3959H135.64V29.5259H126.64V31.6559L133.843 40.1699H139.242L133.843 33.7859H139.242V33.7799ZM146.451 33.7799H157.249V29.5259H146.451V33.7799ZM159.053 35.9099V40.1639V40.1699H141.052V23.1419H159.053V27.3959H144.653V35.9099H159.053ZM178.858 40.1639V29.5259H164.452V23.1419H160.857V33.7799H175.256V35.9099H160.857V40.1639H178.858ZM178.858 27.3959V23.1419H166.256V27.3959H178.858ZM198.663 29.5259V40.1639H180.661V35.9099H195.061V33.7799H180.661V23.1419H184.263V29.5259H198.663ZM198.663 23.1419V27.3959H186.061V23.1419H198.663ZM198.497 19.95H61.832V0L198.497 19.95ZM57.6109 51.0001V43.0021H0.454014L57.6109 51.0001ZM61.832 43.0021H199L61.832 51.0001V43.0021Z"
+                fill="url(#paint0_linear_1_49)"
+              />
+            </g>
+            <defs>
+              <linearGradient
+                id="paint0_linear_1_49"
+                x1="0.0748683"
+                y1="25.5"
+                x2="199.011"
+                y2="25.5"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#9F734C" />
+                <stop offset="0.13" stop-color="#BA945E" />
+                <stop offset="0.28" stop-color="#D1B16E" />
+                <stop offset="0.42" stop-color="#E2C579" />
+                <stop offset="0.56" stop-color="#ECD180" />
+                <stop offset="0.7" stop-color="#F0D683" />
+                <stop offset="0.75" stop-color="#E7CC7D" />
+                <stop offset="0.84" stop-color="#D2B16E" />
+                <stop offset="0.95" stop-color="#AF8757" />
+                <stop offset="1" stop-color="#9F734C" />
+              </linearGradient>
+              <clipPath id="clip0_1_49">
+                <rect width="199" height="51" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+          <span class="header-logo__text"
+            >Индивидуальные мебельные туры в Китай для частных клиентов и
+            бизнеса
+          </span>
         </div>
+        <div class="header-side-right">
+          <div class="header-email">
+            <span>E-mail:</span>
+            <a href="mailto:rosexpress-msk@yandex.ru" class="link"
+              >rosexpress-msk@yandex.ru</a
+            >
+          </div>
+          <ul class="social-list">
+            <li class="social-list__item">
+              <a href="#" class="svg-socal svg-socal__youtube"></a>
+            </li>
+            <li class="social-list__item">
+              <a href="#" class="svg-socal svg-socal__telergam"></a>
+            </li>
+            <li class="social-list__item">
+              <a href="#" class="svg-socal svg-socal__vk"></a>
+            </li>
+          </ul>
+          <div class="header-phone">
+            <span>8 (800) 333-89-01</span>
+            <a href="tel:+78003338901" class="link">Обратный звонок</a>
+          </div>
+        </div>
+        <button class="burger-menu" type="button">
+          <span></span>
+        </button>
+      </div>
     </header>
     <main class="main">
-        <section class="section__hero">
-            <div class="container">
-                <h1 class="main-title">
-                    <span class="title-action">Мебельные туры</span>
-                    <br>
-                    с полным сопровождением
-                </h1>
-                <h3 class="subtitle">
-                    <span class="title-action">Экономия до 500%</span>
-                    по сравнению <br>
-                    с заказами из Европы и РФ
-                </h3>
-                <div class="button">
-                    <button type="button"><span>Забронировать тур</span></button>
-                </div>
-                <small class="hero__text--small">
-                    Выбирайте для себя лучшее. <br>
-                    Отправляйтесь в невероятное мебельное <br>
-                    путешествие в Китай с нами!
-                </small>
+      <section class="section__hero">
+        <div class="container">
+          <h1 class="main-title">
+            <span class="title-action">Мебельные туры</span>
+            <br />
+            с полным сопровождением
+          </h1>
+          <h3 class="subtitle">
+            <span class="title-action">Экономия до 500%</span>
+            по сравнению <br />
+            с заказами из Европы и РФ
+          </h3>
+          <div class="button btn-modal">
+            <button type="button"><span>Забронировать тур</span></button>
+          </div>
+          <small class="hero__text--small">
+            Выбирайте для себя лучшее. <br />
+            Отправляйтесь в невероятное мебельное <br />
+            путешествие в Китай с нами!
+          </small>
 
-                <div class="hero__block-responsibility" data-aos="fade-left">
-                    <!-- <div class="hero__block-responsibility--border"> -->
-                    <h4 class="responsibility-text">
-                        <span class="title-action"><b>Собственная ТК</b></span>
-                        – несём полную ответственность
-                    </h4>
-                    <h4 class="responsibility-text">
-                        <span class="title-action"><b>Лично убедитесь</b></span>
-                        в качестве мебели
-                    </h4>
-                    <!-- </div> -->
-                </div>
-                <div class="hero__block-link" data-aos="fade-right">
-                    <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="68" height="68" viewBox="0 0 68 68" fill="none"
-                            class="icon-video">
-                            <g clip-path="url(#clip0_1_152)">
-                                <path
-                                    d="M67.5 34C67.5 52.5015 52.5015 67.5 34 67.5C15.4985 67.5 0.5 52.5015 0.5 34C0.5 15.4985 15.4985 0.5 34 0.5C52.5015 0.5 67.5 15.4985 67.5 34Z"
-                                    fill="url(#paint0_linear_1_152)" stroke="#F0D683" />
-                                <path
-                                    d="M45.126 21.21H22.8739C21.9847 21.21 21.1041 21.3852 20.2826 21.7256C19.4611 22.0661 18.7148 22.565 18.0862 23.194C17.4576 23.823 16.9591 24.5698 16.6192 25.3915C16.2793 26.2132 16.1047 27.0939 16.1053 27.9831V40.0173C16.1047 40.9066 16.2793 41.7872 16.6192 42.609C16.9591 43.4307 17.4576 44.1774 18.0862 44.8064C18.7148 45.4354 19.4611 45.9344 20.2826 46.2748C21.1041 46.6153 21.9847 46.7905 22.8739 46.7905H45.126C46.0153 46.7905 46.8958 46.6153 47.7173 46.2748C48.5388 45.9344 49.2852 45.4354 49.9138 44.8064C50.5424 44.1774 51.0409 43.4307 51.3808 42.609C51.7207 41.7872 51.8953 40.9066 51.8947 40.0173V27.9831C51.8953 27.0939 51.7207 26.2132 51.3808 25.3915C51.0409 24.5698 50.5424 23.823 49.9138 23.194C49.2852 22.565 48.5388 22.0661 47.7173 21.7256C46.8958 21.3852 46.0153 21.21 45.126 21.21ZM29.2847 39.485V28.5155L38.7153 34.0002L29.2847 39.485Z"
-                                    fill="#222222" />
-                            </g>
-                            <defs>
-                                <linearGradient id="paint0_linear_1_152" x1="34" y1="0" x2="34" y2="68"
-                                    gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#DEC173" />
-                                    <stop offset="1" stop-color="#A77E42" />
-                                </linearGradient>
-                                <clipPath id="clip0_1_152">
-                                    <rect width="68" height="68" fill="white" />
-                                </clipPath>
-                            </defs>
-                        </svg>
-                        <h4 class="link-text">
-                            <b>Узнайте больше</b> о туре за 1 минуту
-                        </h4>
-                    </a>
-                </div>
-                <div class="images-wrap">
-                    <img src="./src/images/main-divan.png" alt="Новый диван" class="main__image" data-aos="fade-down">
-                    <div class="lamp">
-                        <img src="./src/images/lamp.png" alt="Лампа">
-                    </div>
-                </div>
+          <div class="hero__block-responsibility" data-aos="fade-left">
+            <!-- <div class="hero__block-responsibility--border"> -->
+            <h4 class="responsibility-text">
+              <span class="title-action"><b>Собственная ТК</b></span>
+              – несём полную ответственность
+            </h4>
+            <h4 class="responsibility-text">
+              <span class="title-action"><b>Лично убедитесь</b></span>
+              в качестве мебели
+            </h4>
+            <!-- </div> -->
+          </div>
+          <div class="hero__block-link" data-aos="fade-right">
+            <a href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="68"
+                height="68"
+                viewBox="0 0 68 68"
+                fill="none"
+                class="icon-video"
+              >
+                <g clip-path="url(#clip0_1_152)">
+                  <path
+                    d="M67.5 34C67.5 52.5015 52.5015 67.5 34 67.5C15.4985 67.5 0.5 52.5015 0.5 34C0.5 15.4985 15.4985 0.5 34 0.5C52.5015 0.5 67.5 15.4985 67.5 34Z"
+                    fill="url(#paint0_linear_1_152)"
+                    stroke="#F0D683"
+                  />
+                  <path
+                    d="M45.126 21.21H22.8739C21.9847 21.21 21.1041 21.3852 20.2826 21.7256C19.4611 22.0661 18.7148 22.565 18.0862 23.194C17.4576 23.823 16.9591 24.5698 16.6192 25.3915C16.2793 26.2132 16.1047 27.0939 16.1053 27.9831V40.0173C16.1047 40.9066 16.2793 41.7872 16.6192 42.609C16.9591 43.4307 17.4576 44.1774 18.0862 44.8064C18.7148 45.4354 19.4611 45.9344 20.2826 46.2748C21.1041 46.6153 21.9847 46.7905 22.8739 46.7905H45.126C46.0153 46.7905 46.8958 46.6153 47.7173 46.2748C48.5388 45.9344 49.2852 45.4354 49.9138 44.8064C50.5424 44.1774 51.0409 43.4307 51.3808 42.609C51.7207 41.7872 51.8953 40.9066 51.8947 40.0173V27.9831C51.8953 27.0939 51.7207 26.2132 51.3808 25.3915C51.0409 24.5698 50.5424 23.823 49.9138 23.194C49.2852 22.565 48.5388 22.0661 47.7173 21.7256C46.8958 21.3852 46.0153 21.21 45.126 21.21ZM29.2847 39.485V28.5155L38.7153 34.0002L29.2847 39.485Z"
+                    fill="#222222"
+                  />
+                </g>
+                <defs>
+                  <linearGradient
+                    id="paint0_linear_1_152"
+                    x1="34"
+                    y1="0"
+                    x2="34"
+                    y2="68"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#DEC173" />
+                    <stop offset="1" stop-color="#A77E42" />
+                  </linearGradient>
+                  <clipPath id="clip0_1_152">
+                    <rect width="68" height="68" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <h4 class="link-text">
+                <b>Узнайте больше</b> о туре за 1 минуту
+              </h4>
+            </a>
+          </div>
+          <div class="images-wrap">
+            <img
+              src="./src/images/main-divan.png"
+              alt="Новый диван"
+              class="main__image"
+              data-aos="fade-down"
+            />
+            <div class="lamp">
+              <img src="./src/images/lamp.png" alt="Лампа" />
             </div>
-        </section>
-        <section class="section__advantages">
-            <div class="container">
-                <div class="achievements">
-                    <ul class="achievements__list">
-                        <li class="achievements__item" data-aos="zoom-in">
-                            <span class="number">15+</span>
-                            лет опыта в <br>
-                            мебельных турах
-
-                        </li>
-                        <li class="achievements__item" data-aos="zoom-in">
-                            <span class="number">700+</span>
-                            доставленных <br>
-                            контейнеров
-
-                        </li>
-                        <li class="achievements__item" data-aos="zoom-in">
-                            <span class="number">2+</span>
-                            млрд руб. сэкономили <br>
-                            клиентам на покупке мебели
-                        </li>
-                        <li class="achievements__item" data-aos="zoom-in">
-                            <span class="number">15</span>
-                            опытных сотрудников <br>
-                            в России
-                        </li>
-                        <li class="achievements__item" data-aos="zoom-in">
-                            <span class="number">10</span>
-                            штатных сотрудников <br>
-                            в Китае
-                        </li>
-                    </ul>
-                </div>
-                <h2 class="title">
-                    <span class="title-action">95% магазинов</span> заказывают мебель из Китая и не только в России, но
-                    весь остальной мир!
-                </h2>
-                <div class="block-difference">
-                    <div class="block-difference__buy" data-aos="fade-down">
-                        <h3 class="block-difference__title">
-                            Онлайн покупка мебели из РФ, Европы и Китая
-                        </h3>
-                        <ul class="block-difference__list">
-                            <li class="list__item">
-                                Ограниченный выбор на сайтах. Большинство фабрик РФ предлагает 5-10 стандартных
-                                однообразных моделей.
-                            </li>
-                            <li class="list__item">
-                                Нельзя оценить заранее качество изделий и материалов.
-                            </li>
-                            <li class="list__item">
-                                Большой риск получить мебель, не соответствующую ожиданиям.
-                            </li>
-                            <li class="list__item">
-                                Приходится слепо доверять отзывам о производителе или посреднике.
-                            </li>
-                            <li class="list__item">
-                                Необходимо заказывать мебель, сантехнику и свет из разных магазинов и переплачивать за
-                                доставку.
-                            </li>
-                            <li class="list__item">
-                                Известные и надежные европейские бренды на сегодняшний день недоступны к прямому заказу
-                                из РФ.
-                            </li>
-                            <li class="list__item">
-                                Переплата от 30 до 60% если вы покупаете у дистрибьютора, а не у производителя напрямую.
-                            </li>
-                        </ul>
-                    </div>
-                    <img src="./src/images/divan-gray.png" alt="Картинка серого дивана"
-                        class="image-divan image-divan--gray" data-aos="fade-right">
-                    <div class="block-difference__tour" data-aos="fade-down">
-                        <h3 class="block-difference__title">
-                            Мебельный тур в Китай с РосЭкспресс
-                        </h3>
-                        <ul class="block-difference__list">
-                            <li class="list__item">
-                                Прямой доступ к фабрикам-производителям и тысячам вариантов качественной мебели.
-                            </li>
-                            <li class="list__item">
-
-                                Доступ к эксклюзивным коллекциям мебели, не выставленным на продажу онлайн.
-                            </li>
-                            <li class="list__item">
-                                Вы лично удостоверитесь в высоком качестве: оцените материалы и рассмотрите каждую
-                                деталь.
-                            </li>
-                            <li class="list__item">
-                                Проверите мебель в реальных условиях. Сможете сесть на стулья, раскрыть ящики комода,
-                                разложить диван.
-                            </li>
-                            <li class="list__item">
-                                Купите в ходе тура всё необходимое для комплектации интерьера под ключ.
-                            </li>
-                            <li class="list__item">
-                                Погрузитесь в атмосферу, традиции и уникальную культуру Китая.
-                            </li>
-                            <li class="list__item">
-                                Покупка напрямую от фабрики = экономия в 2-5 раз. Без посредников и скрытых расходов.
-                                Чем больше объём мебели в вашем
-                                заказе, тем больше ваша выгода!
-                            </li>
-                        </ul>
-                    </div>
-                    <img src="./src/images/divan-light.png" alt="Картинка светло-серого дивана"
-                        class="image-divan image-divan--lightgray" data-aos="fade-left">
-                </div>
-
-
-                <div class="block__help">
-                    <p class="help-text">
-                        Нужна помощь специалиста?
-                        Задайте свой вопрос
-                    </p>
-                    <a href="#" class="svg-socal">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-                            <path
-                                d="M31.8812 0H8.11881C3.63492 0 0 3.59114 0 8.02103V31.4972C0 35.9271 3.63492 39.5183 8.11881 39.5183H31.8812C36.3651 39.5183 40 35.9271 40 31.4972V8.02103C40 3.59114 36.3651 0 31.8812 0Z"
-                                fill="url(#paint0_radial_1_446)" />
-                            <path
-                                d="M27.7071 13.2721L27.4122 13.3745L11.4076 18.8992C11.2942 18.9328 11.1957 19.0015 11.1274 19.0945C11.0591 19.1876 11.025 19.2997 11.0303 19.4133C11.0357 19.527 11.0803 19.6357 11.1571 19.7224C11.2339 19.8091 11.3385 19.869 11.4546 19.8927L15.5975 20.9793L16.3704 23.1525L17.1432 25.3257C17.1876 25.4323 17.2585 25.5268 17.3497 25.6012C17.4409 25.6755 17.5496 25.7274 17.6665 25.7523C17.7834 25.7773 17.9048 25.7745 18.0203 25.7442C18.1358 25.714 18.2418 25.6572 18.3292 25.5788L20.4695 23.6415L24.6724 26.372C25.186 26.7073 25.9183 26.4589 26.0496 25.9063L28.8331 14.1227C28.9692 13.5391 28.3276 13.0594 27.7071 13.2721ZM25.664 15.8877L18.4329 21.5505L18.0927 21.8175C18.0179 21.8743 17.9691 21.9567 17.9566 22.0473L17.8804 22.6496L17.6714 24.3416C17.6731 24.3622 17.6663 24.3826 17.6523 24.3983C17.6383 24.414 17.6184 24.4238 17.5969 24.4254C17.5754 24.4271 17.5541 24.4205 17.5377 24.4071C17.5213 24.3937 17.5111 24.3746 17.5094 24.354L16.9213 22.6635L16.3137 20.9327C16.288 20.8549 16.2914 20.771 16.3233 20.6953C16.3553 20.6197 16.4137 20.5571 16.4887 20.5182L24.013 16.386L25.429 15.6098C25.6348 15.495 25.8454 15.7449 25.664 15.8877Z"
-                                fill="url(#paint1_linear_1_446)" />
-                            <defs>
-                                <radialGradient id="paint0_radial_1_446" cx="0" cy="0" r="1"
-                                    gradientUnits="userSpaceOnUse"
-                                    gradientTransform="translate(4.15841 3.3258) scale(47.7505 47.1754)">
-                                    <stop stop-color="#3D3D3D" />
-                                    <stop offset="1" stop-color="#141414" />
-                                </radialGradient>
-                                <linearGradient id="paint1_linear_1_446" x1="11.028" y1="19.8754" x2="28.8472"
-                                    y2="19.8754" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#9F734C" />
-                                    <stop offset="0.13" stop-color="#BA945E" />
-                                    <stop offset="0.28" stop-color="#D1B16E" />
-                                    <stop offset="0.42" stop-color="#E2C579" />
-                                    <stop offset="0.56" stop-color="#ECD180" />
-                                    <stop offset="0.7" stop-color="#F0D683" />
-                                    <stop offset="0.75" stop-color="#E7CC7D" />
-                                    <stop offset="0.84" stop-color="#D2B16E" />
-                                    <stop offset="0.95" stop-color="#AF8757" />
-                                    <stop offset="1" stop-color="#9F734C" />
-                                </linearGradient>
-                            </defs>
-                        </svg>
-                    </a>
-                    <a href="#" class="svg-socal">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-                            <path
-                                d="M31.8812 0H8.11881C3.63492 0 0 3.59114 0 8.02103V31.4972C0 35.9271 3.63492 39.5183 8.11881 39.5183H31.8812C36.3651 39.5183 40 35.9271 40 31.4972V8.02103C40 3.59114 36.3651 0 31.8812 0Z"
-                                fill="url(#paint0_radial_1_453)" />
-                            <path
-                                d="M9.98822 14.7117C10.9268 14.7117 12.9308 14.7117 13.6041 14.7117C13.7427 14.7117 13.8694 14.7938 13.9288 14.919C14.7605 16.7032 15.7704 18.3192 16.9902 19.7434C17.0932 19.9116 17.3466 19.8921 17.4258 19.7121C17.806 18.7965 18.511 16.5702 17.1486 14.9856C17.0258 14.8447 17.0773 14.6217 17.2476 14.5512C18.6258 13.9839 19.9763 13.9017 21.2872 14.4808C21.5645 14.6021 21.7427 14.8721 21.7427 15.1734L22.0516 19.7591C22.0516 19.9625 22.2417 20.1268 22.4437 20.0838C23.9565 19.7669 24.8476 17.5288 25.7268 15.1929C25.8338 14.9034 26.111 14.7117 26.4199 14.7117H29.7506C30.0239 14.7117 30.2417 14.9503 30.1942 15.2164C29.8813 16.8754 28.1942 19.0235 27.311 20.0564C27.006 20.4125 27.0021 20.9368 27.311 21.2928L30.2892 24.7947C30.5031 25.0451 30.3209 25.4286 29.9882 25.4286H26.2179C25.909 25.4286 25.612 25.2994 25.4021 25.0764L22.7645 22.9088C22.6258 22.7601 22.3684 22.7092 22.2417 22.8618C21.9169 23.2531 21.9407 23.7383 21.7862 24.8377C21.7387 25.1821 21.4258 25.4286 21.0734 25.4286H18.4951C18.1268 25.4286 17.7664 25.3542 17.4338 25.1977C15.9565 24.5052 11.913 22.048 9.64366 15.1773C9.56842 14.9464 9.74267 14.7078 9.98822 14.7078V14.7117Z"
-                                fill="url(#paint1_linear_1_453)" />
-                            <defs>
-                                <radialGradient id="paint0_radial_1_453" cx="0" cy="0" r="1"
-                                    gradientUnits="userSpaceOnUse"
-                                    gradientTransform="translate(4.15841 3.3258) scale(47.7505 47.1754)">
-                                    <stop stop-color="#3D3D3D" />
-                                    <stop offset="1" stop-color="#141414" />
-                                </radialGradient>
-                                <linearGradient id="paint1_linear_1_453" x1="9.62386" y1="19.7591" x2="30.3763"
-                                    y2="19.7591" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#9F734C" />
-                                    <stop offset="0.13" stop-color="#BA945E" />
-                                    <stop offset="0.28" stop-color="#D1B16E" />
-                                    <stop offset="0.42" stop-color="#E2C579" />
-                                    <stop offset="0.56" stop-color="#ECD180" />
-                                    <stop offset="0.7" stop-color="#F0D683" />
-                                    <stop offset="0.75" stop-color="#E7CC7D" />
-                                    <stop offset="0.84" stop-color="#D2B16E" />
-                                    <stop offset="0.95" stop-color="#AF8757" />
-                                    <stop offset="1" stop-color="#9F734C" />
-                                </linearGradient>
-                            </defs>
-                        </svg>
-                    </a>
-                </div>
+          </div>
+        </div>
+      </section>
+      <section class="section__advantages">
+        <div class="container">
+          <div class="achievements">
+            <ul class="achievements__list">
+              <li class="achievements__item" data-aos="zoom-in">
+                <span class="number">15+</span>
+                лет опыта в <br />
+                мебельных турах
+              </li>
+              <li class="achievements__item" data-aos="zoom-in">
+                <span class="number">700+</span>
+                доставленных <br />
+                контейнеров
+              </li>
+              <li class="achievements__item" data-aos="zoom-in">
+                <span class="number">2+</span>
+                млрд руб. сэкономили <br />
+                клиентам на покупке мебели
+              </li>
+              <li class="achievements__item" data-aos="zoom-in">
+                <span class="number">15</span>
+                опытных сотрудников <br />
+                в России
+              </li>
+              <li class="achievements__item" data-aos="zoom-in">
+                <span class="number">10</span>
+                штатных сотрудников <br />
+                в Китае
+              </li>
+            </ul>
+          </div>
+          <h2 class="title">
+            <span class="title-action">95% магазинов</span> заказывают мебель из
+            Китая и не только в России, но весь остальной мир!
+          </h2>
+          <div class="block-difference">
+            <div class="block-difference__buy" data-aos="fade-down">
+              <h3 class="block-difference__title">
+                Онлайн покупка мебели из РФ, Европы и Китая
+              </h3>
+              <ul class="block-difference__list">
+                <li class="list__item">
+                  Ограниченный выбор на сайтах. Большинство фабрик РФ предлагает
+                  5-10 стандартных однообразных моделей.
+                </li>
+                <li class="list__item">
+                  Нельзя оценить заранее качество изделий и материалов.
+                </li>
+                <li class="list__item">
+                  Большой риск получить мебель, не соответствующую ожиданиям.
+                </li>
+                <li class="list__item">
+                  Приходится слепо доверять отзывам о производителе или
+                  посреднике.
+                </li>
+                <li class="list__item">
+                  Необходимо заказывать мебель, сантехнику и свет из разных
+                  магазинов и переплачивать за доставку.
+                </li>
+                <li class="list__item">
+                  Известные и надежные европейские бренды на сегодняшний день
+                  недоступны к прямому заказу из РФ.
+                </li>
+                <li class="list__item">
+                  Переплата от 30 до 60% если вы покупаете у дистрибьютора, а не
+                  у производителя напрямую.
+                </li>
+              </ul>
             </div>
-        </section>
-        <section class="section__tour">
-            <div class="container">
-                <h2 class="title">
-                    <span class="title-action">Мебельные туры</span> в Фошань под ключ
-                </h2>
-                <h3 class="subtitle">
-                    Предоставляем <span class="title-action"><b>полный спектр услуг</b></span> и несём полную <br>
-                    ответственность на каждом этапе:
-                </h3>
-                <div class="steps-wrapper">
-                    <div class="step step-01">
-                        <svg class="step__line" xmlns="http://www.w3.org/2000/svg" width="380" height="56"
-                            viewBox="0 0 385 56" fill="none">
-                            <path d="M0 1H339C363.853 1 384 21.1472 384 46V56" stroke="#F0D683" />
-                        </svg>
-                        <p class="step-num"><span>01</span></p>
-                        <h4 class="step-title" data-aos="fade-right">Организация поездки</h4>
-                        <p class="step-text" data-aos="fade-right">
-                            От оформления визы до бронирования гостиницы
-                        </p>
-                    </div>
-                    <div class="step step-02">
-                        <svg class="step__line" xmlns="http://www.w3.org/2000/svg" width="380" height="110"
-                            viewBox="0 0 384 110" fill="none">
-                            <path
-                                d="M0 1H248.534C273.387 1 293.534 21.1472 293.534 46V64C293.534 88.8528 313.681 109 338.534 109H384"
-                                stroke="#F0D683" />
-                        </svg>
-                        <p class="step-num">02</p>
-                        <h4 class="step-title" data-aos="fade-right">Контроль качества</h4>
-                        <p class="step-text" data-aos="fade-right">
-                            Не просто оформляем, а выполняем
-                            тщательную проверку: на складе
-                            производителя и перед
-                            отправкой.
-                            Предоставляем вам видео
-                            и фотоотчёт
-                            перед отправкой
-                        </p>
-                    </div>
-                    <div class="step step-03">
-                        <svg class="step__line" xmlns="http://www.w3.org/2000/svg" width="380" height="100"
-                            viewBox="0 0 385 100" fill="none">
-                            <path
-                                d="M0 1H251.061C275.914 1 296.061 21.1472 296.061 46V55.0305C296.061 79.3142 315.747 99 340.031 99V99C364.314 99 384 79.3142 384 55.0305V17"
-                                stroke="#F0D683" />
-                        </svg>
-                        <p class="step-num">03</p>
-                        <h4 class="step-title" data-aos="fade-right">Оформление документов</h4>
-                        <p class="step-text" data-aos="fade-right">
-                            Готовим все сопроводительные бумаги, выполняем растаможивание и доставляем товары прямо до
-                            вашей двери
-                        </p>
-                    </div>
-
-                    <div class="blur">
-                    </div>
-                    <img src="./src/images/women-2.png" alt="Картинка с девушкой в кресле" class="tour__image"
-                        data-aos="zoom-in">
-
-                    <div class="step step-04">
-                        <svg class="step__line" xmlns="http://www.w3.org/2000/svg" width="380" height="56"
-                            viewBox="0 0 385 56" fill="none">
-                            <path d="M385 1H46C21.1472 1 0.999983 21.1472 0.999983 46V56" stroke="#F0D683" />
-                        </svg>
-                        <p class="step-num">04</p>
-                        <h4 class="step-title" data-aos="fade-left">Транспортировка</h4>
-                        <p class="step-text" data-aos="fade-left">
-                            Перевозим собственной ТК. Гарантируем, что все будет доставлено без повреждений
-                        </p>
-                    </div>
-                    <div class="step step-05">
-                        <svg class="step__line" xmlns="http://www.w3.org/2000/svg" width="380" height="110"
-                            viewBox="0 0 384 110" fill="none">
-                            <path
-                                d="M384 1H135.466C110.613 1 90.4662 21.1472 90.4662 46V64C90.4662 88.8528 70.319 109 45.4662 109H-9.65595e-06"
-                                stroke="#F0D683" />
-                        </svg>
-                        <p class="step-num">05</p>
-                        <h4 class="step-title" data-aos="fade-left">Персональный менеджер-переводчик</h4>
-                        <p class="step-text" data-aos="fade-left">
-                            Более 10 лет опыта индивидуального подбора мебели
-                        </p>
-                    </div>
-                    <div class="button" data-aos="fade-left">
-                        <button type="button"><span>Забронировать тур</span></button>
-                    </div>
-                </div>
+            <img
+              src="./src/images/divan-gray.png"
+              alt="Картинка серого дивана"
+              class="image-divan image-divan--gray"
+              data-aos="fade-right"
+            />
+            <div class="block-difference__tour" data-aos="fade-down">
+              <h3 class="block-difference__title">
+                Мебельный тур в Китай с РосЭкспресс
+              </h3>
+              <ul class="block-difference__list">
+                <li class="list__item">
+                  Прямой доступ к фабрикам-производителям и тысячам вариантов
+                  качественной мебели.
+                </li>
+                <li class="list__item">
+                  Доступ к эксклюзивным коллекциям мебели, не выставленным на
+                  продажу онлайн.
+                </li>
+                <li class="list__item">
+                  Вы лично удостоверитесь в высоком качестве: оцените материалы
+                  и рассмотрите каждую деталь.
+                </li>
+                <li class="list__item">
+                  Проверите мебель в реальных условиях. Сможете сесть на стулья,
+                  раскрыть ящики комода, разложить диван.
+                </li>
+                <li class="list__item">
+                  Купите в ходе тура всё необходимое для комплектации интерьера
+                  под ключ.
+                </li>
+                <li class="list__item">
+                  Погрузитесь в атмосферу, традиции и уникальную культуру Китая.
+                </li>
+                <li class="list__item">
+                  Покупка напрямую от фабрики = экономия в 2-5 раз. Без
+                  посредников и скрытых расходов. Чем больше объём мебели в
+                  вашем заказе, тем больше ваша выгода!
+                </li>
+              </ul>
             </div>
-        </section>
+            <img
+              src="./src/images/divan-light.png"
+              alt="Картинка светло-серого дивана"
+              class="image-divan image-divan--lightgray"
+              data-aos="fade-left"
+            />
+          </div>
+
+          <div class="block__help">
+            <p class="help-text">
+              Нужна помощь специалиста? Задайте свой вопрос
+            </p>
+            <a href="#" class="svg-socal">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+              >
+                <path
+                  d="M31.8812 0H8.11881C3.63492 0 0 3.59114 0 8.02103V31.4972C0 35.9271 3.63492 39.5183 8.11881 39.5183H31.8812C36.3651 39.5183 40 35.9271 40 31.4972V8.02103C40 3.59114 36.3651 0 31.8812 0Z"
+                  fill="url(#paint0_radial_1_446)"
+                />
+                <path
+                  d="M27.7071 13.2721L27.4122 13.3745L11.4076 18.8992C11.2942 18.9328 11.1957 19.0015 11.1274 19.0945C11.0591 19.1876 11.025 19.2997 11.0303 19.4133C11.0357 19.527 11.0803 19.6357 11.1571 19.7224C11.2339 19.8091 11.3385 19.869 11.4546 19.8927L15.5975 20.9793L16.3704 23.1525L17.1432 25.3257C17.1876 25.4323 17.2585 25.5268 17.3497 25.6012C17.4409 25.6755 17.5496 25.7274 17.6665 25.7523C17.7834 25.7773 17.9048 25.7745 18.0203 25.7442C18.1358 25.714 18.2418 25.6572 18.3292 25.5788L20.4695 23.6415L24.6724 26.372C25.186 26.7073 25.9183 26.4589 26.0496 25.9063L28.8331 14.1227C28.9692 13.5391 28.3276 13.0594 27.7071 13.2721ZM25.664 15.8877L18.4329 21.5505L18.0927 21.8175C18.0179 21.8743 17.9691 21.9567 17.9566 22.0473L17.8804 22.6496L17.6714 24.3416C17.6731 24.3622 17.6663 24.3826 17.6523 24.3983C17.6383 24.414 17.6184 24.4238 17.5969 24.4254C17.5754 24.4271 17.5541 24.4205 17.5377 24.4071C17.5213 24.3937 17.5111 24.3746 17.5094 24.354L16.9213 22.6635L16.3137 20.9327C16.288 20.8549 16.2914 20.771 16.3233 20.6953C16.3553 20.6197 16.4137 20.5571 16.4887 20.5182L24.013 16.386L25.429 15.6098C25.6348 15.495 25.8454 15.7449 25.664 15.8877Z"
+                  fill="url(#paint1_linear_1_446)"
+                />
+                <defs>
+                  <radialGradient
+                    id="paint0_radial_1_446"
+                    cx="0"
+                    cy="0"
+                    r="1"
+                    gradientUnits="userSpaceOnUse"
+                    gradientTransform="translate(4.15841 3.3258) scale(47.7505 47.1754)"
+                  >
+                    <stop stop-color="#3D3D3D" />
+                    <stop offset="1" stop-color="#141414" />
+                  </radialGradient>
+                  <linearGradient
+                    id="paint1_linear_1_446"
+                    x1="11.028"
+                    y1="19.8754"
+                    x2="28.8472"
+                    y2="19.8754"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#9F734C" />
+                    <stop offset="0.13" stop-color="#BA945E" />
+                    <stop offset="0.28" stop-color="#D1B16E" />
+                    <stop offset="0.42" stop-color="#E2C579" />
+                    <stop offset="0.56" stop-color="#ECD180" />
+                    <stop offset="0.7" stop-color="#F0D683" />
+                    <stop offset="0.75" stop-color="#E7CC7D" />
+                    <stop offset="0.84" stop-color="#D2B16E" />
+                    <stop offset="0.95" stop-color="#AF8757" />
+                    <stop offset="1" stop-color="#9F734C" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </a>
+            <a href="#" class="svg-socal">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+              >
+                <path
+                  d="M31.8812 0H8.11881C3.63492 0 0 3.59114 0 8.02103V31.4972C0 35.9271 3.63492 39.5183 8.11881 39.5183H31.8812C36.3651 39.5183 40 35.9271 40 31.4972V8.02103C40 3.59114 36.3651 0 31.8812 0Z"
+                  fill="url(#paint0_radial_1_453)"
+                />
+                <path
+                  d="M9.98822 14.7117C10.9268 14.7117 12.9308 14.7117 13.6041 14.7117C13.7427 14.7117 13.8694 14.7938 13.9288 14.919C14.7605 16.7032 15.7704 18.3192 16.9902 19.7434C17.0932 19.9116 17.3466 19.8921 17.4258 19.7121C17.806 18.7965 18.511 16.5702 17.1486 14.9856C17.0258 14.8447 17.0773 14.6217 17.2476 14.5512C18.6258 13.9839 19.9763 13.9017 21.2872 14.4808C21.5645 14.6021 21.7427 14.8721 21.7427 15.1734L22.0516 19.7591C22.0516 19.9625 22.2417 20.1268 22.4437 20.0838C23.9565 19.7669 24.8476 17.5288 25.7268 15.1929C25.8338 14.9034 26.111 14.7117 26.4199 14.7117H29.7506C30.0239 14.7117 30.2417 14.9503 30.1942 15.2164C29.8813 16.8754 28.1942 19.0235 27.311 20.0564C27.006 20.4125 27.0021 20.9368 27.311 21.2928L30.2892 24.7947C30.5031 25.0451 30.3209 25.4286 29.9882 25.4286H26.2179C25.909 25.4286 25.612 25.2994 25.4021 25.0764L22.7645 22.9088C22.6258 22.7601 22.3684 22.7092 22.2417 22.8618C21.9169 23.2531 21.9407 23.7383 21.7862 24.8377C21.7387 25.1821 21.4258 25.4286 21.0734 25.4286H18.4951C18.1268 25.4286 17.7664 25.3542 17.4338 25.1977C15.9565 24.5052 11.913 22.048 9.64366 15.1773C9.56842 14.9464 9.74267 14.7078 9.98822 14.7078V14.7117Z"
+                  fill="url(#paint1_linear_1_453)"
+                />
+                <defs>
+                  <radialGradient
+                    id="paint0_radial_1_453"
+                    cx="0"
+                    cy="0"
+                    r="1"
+                    gradientUnits="userSpaceOnUse"
+                    gradientTransform="translate(4.15841 3.3258) scale(47.7505 47.1754)"
+                  >
+                    <stop stop-color="#3D3D3D" />
+                    <stop offset="1" stop-color="#141414" />
+                  </radialGradient>
+                  <linearGradient
+                    id="paint1_linear_1_453"
+                    x1="9.62386"
+                    y1="19.7591"
+                    x2="30.3763"
+                    y2="19.7591"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#9F734C" />
+                    <stop offset="0.13" stop-color="#BA945E" />
+                    <stop offset="0.28" stop-color="#D1B16E" />
+                    <stop offset="0.42" stop-color="#E2C579" />
+                    <stop offset="0.56" stop-color="#ECD180" />
+                    <stop offset="0.7" stop-color="#F0D683" />
+                    <stop offset="0.75" stop-color="#E7CC7D" />
+                    <stop offset="0.84" stop-color="#D2B16E" />
+                    <stop offset="0.95" stop-color="#AF8757" />
+                    <stop offset="1" stop-color="#9F734C" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="section__tour">
+        <div class="container">
+          <h2 class="title">
+            <span class="title-action">Мебельные туры</span> в Фошань под ключ
+          </h2>
+          <h3 class="subtitle">
+            Предоставляем
+            <span class="title-action"><b>полный спектр услуг</b></span> и несём
+            полную <br />
+            ответственность на каждом этапе:
+          </h3>
+          <div class="steps-wrapper">
+            <div class="step step-01">
+              <svg
+                class="step__line"
+                xmlns="http://www.w3.org/2000/svg"
+                width="380"
+                height="56"
+                viewBox="0 0 385 56"
+                fill="none"
+              >
+                <path
+                  d="M0 1H339C363.853 1 384 21.1472 384 46V56"
+                  stroke="#F0D683"
+                />
+              </svg>
+              <p class="step-num"><span>01</span></p>
+              <h4 class="step-title" data-aos="fade-right">
+                Организация поездки
+              </h4>
+              <p class="step-text" data-aos="fade-right">
+                От оформления визы до бронирования гостиницы
+              </p>
+            </div>
+            <div class="step step-02">
+              <svg
+                class="step__line"
+                xmlns="http://www.w3.org/2000/svg"
+                width="380"
+                height="110"
+                viewBox="0 0 384 110"
+                fill="none"
+              >
+                <path
+                  d="M0 1H248.534C273.387 1 293.534 21.1472 293.534 46V64C293.534 88.8528 313.681 109 338.534 109H384"
+                  stroke="#F0D683"
+                />
+              </svg>
+              <p class="step-num">02</p>
+              <h4 class="step-title" data-aos="fade-right">
+                Контроль качества
+              </h4>
+              <p class="step-text" data-aos="fade-right">
+                Не просто оформляем, а выполняем тщательную проверку: на складе
+                производителя и перед отправкой. Предоставляем вам видео и
+                фотоотчёт перед отправкой
+              </p>
+            </div>
+            <div class="step step-03">
+              <svg
+                class="step__line"
+                xmlns="http://www.w3.org/2000/svg"
+                width="380"
+                height="100"
+                viewBox="0 0 385 100"
+                fill="none"
+              >
+                <path
+                  d="M0 1H251.061C275.914 1 296.061 21.1472 296.061 46V55.0305C296.061 79.3142 315.747 99 340.031 99V99C364.314 99 384 79.3142 384 55.0305V17"
+                  stroke="#F0D683"
+                />
+              </svg>
+              <p class="step-num">03</p>
+              <h4 class="step-title" data-aos="fade-right">
+                Оформление документов
+              </h4>
+              <p class="step-text" data-aos="fade-right">
+                Готовим все сопроводительные бумаги, выполняем растаможивание и
+                доставляем товары прямо до вашей двери
+              </p>
+            </div>
+
+            <div class="blur"></div>
+            <img
+              src="./src/images/women-2.png"
+              alt="Картинка с девушкой в кресле"
+              class="tour__image"
+              data-aos="zoom-in"
+            />
+
+            <div class="step step-04">
+              <svg
+                class="step__line"
+                xmlns="http://www.w3.org/2000/svg"
+                width="380"
+                height="56"
+                viewBox="0 0 385 56"
+                fill="none"
+              >
+                <path
+                  d="M385 1H46C21.1472 1 0.999983 21.1472 0.999983 46V56"
+                  stroke="#F0D683"
+                />
+              </svg>
+              <p class="step-num">04</p>
+              <h4 class="step-title" data-aos="fade-left">Транспортировка</h4>
+              <p class="step-text" data-aos="fade-left">
+                Перевозим собственной ТК. Гарантируем, что все будет доставлено
+                без повреждений
+              </p>
+            </div>
+            <div class="step step-05">
+              <svg
+                class="step__line"
+                xmlns="http://www.w3.org/2000/svg"
+                width="380"
+                height="110"
+                viewBox="0 0 384 110"
+                fill="none"
+              >
+                <path
+                  d="M384 1H135.466C110.613 1 90.4662 21.1472 90.4662 46V64C90.4662 88.8528 70.319 109 45.4662 109H-9.65595e-06"
+                  stroke="#F0D683"
+                />
+              </svg>
+              <p class="step-num">05</p>
+              <h4 class="step-title" data-aos="fade-left">
+                Персональный менеджер-переводчик
+              </h4>
+              <p class="step-text" data-aos="fade-left">
+                Более 10 лет опыта индивидуального подбора мебели
+              </p>
+            </div>
+            <div class="button btn-modal" data-aos="fade-left">
+              <button type="button"><span>Забронировать тур</span></button>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+    <div class="modal" id="tour-modal">
+      <div class="modal__wrapper">
+        <div class="modal__content">
+          <span class="modal__close">&times;</span>
+          <h2 class="modal__title">Запись на тур</h2>
+          <form class="modal__form">
+            <label class="modal__label">
+              Имя
+              <input
+                type="text"
+                class="modal__input"
+                placeholder="Ваше имя"
+                required
+              />
+            </label>
+            <label class="modal__label">
+              Телефон
+              <input
+                type="tel"
+                class="modal__input"
+                placeholder="Ваш номер телефона"
+                pattern="^[0-9]+$"
+                required
+              />
+            </label>
+            <label class="modal__label">
+              Email
+              <input
+                type="email"
+                class="modal__input"
+                placeholder="Ваш email"
+                required
+              />
+            </label>
+            <label class="modal__label">
+              Дата тура
+              <input
+                type="date"
+                class="modal__input"
+                required
+                min="2025-01-01"
+                max="2025-12-31"
+              />
+            </label>
+            <button type="submit" class="modal__button">Записаться</button>
+          </form>
+          <h3 class="text-success">
+            Ваша заявка отправлена. <br />
+            Ожидайте звонка оператора
+          </h3>
+        </div>
+      </div>
+    </div>
     <script src="./src/scripts/script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
+      AOS.init();
     </script>
-</body>
-
+  </body>
 </html>
