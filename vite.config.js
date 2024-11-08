@@ -1,3 +1,3 @@
 export default {
-  base: '/test-task/',
+  base: '/test-task',
 };
